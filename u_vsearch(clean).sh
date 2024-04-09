@@ -21,7 +21,7 @@ done &
 
 head temp/`tail -n+2 result/metadata.txt | cut -f 1 | tail -n1`.fastq | grep ^@
 
-# 3 Iintegrate renamed reads
+# 3 Integrate renamed reads
 cat temp/*.merged.fastq > temp/all.fastq
 ls -lsh temp/all.fastq
 head -n 6 temp/all.fastq|cut -c1-60
