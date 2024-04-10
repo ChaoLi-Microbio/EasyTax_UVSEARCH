@@ -5,8 +5,8 @@
 Environment deployment:
 1. Download 'db' folder of this project
 2. Download gg2.fa and/or slv138.1.fa, put it into 'db' folder
-4. Running 'u_vsearch(clean).sh' in terminal step by step
-5. Running 'visualization.R' step by step for taxonomy visualization
+3. Running 'u_vsearch(clean).sh' in terminal step by step
+4. Running 'visualization.R' step by step for taxonomy visualization
 
 There you go!
 
