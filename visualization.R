@@ -14,8 +14,8 @@ set.seed(315)
 width = 89
 height = 59
 
-#
-setwd("/media/mengyan/DATA1/Chao/Amplicon/16s/4_mock/mock02/i/result") # slv138.1, gg2
+# setup work directory with the folder containing taxonomy.txt and otutab.txt etc.
+setwd("your data folder") # slv138.1, gg2
 
 metadata = read.table("metadata.txt", header=T, row.names=NULL, sep="\t", comment.char="")
 rownames(metadata) = metadata$SampleID
