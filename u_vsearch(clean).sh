@@ -1,6 +1,7 @@
+#running in linux system
 #Setting up working directory
 wd={your data folder}
-db={floder of EasyMicrobiome}
+db={database folder}
 PATH=$PATH:${db}/linux
 cd ${wd}
 
@@ -18,8 +19,6 @@ vsearch --fastq_mergepairs seq/${i}_R1_001.fastq.gz \
 --fastqout temp/${i}.merged.fastq \
 --relabel ${i}.
 done &
-
-head temp/`tail -n+2 result/metadata.txt | cut -f 1 | tail -n1`.fastq | grep ^@
 
 # 3 Integrate renamed reads
 cat temp/*.merged.fastq > temp/all.fastq
@@ -65,7 +64,7 @@ csvtk -t stat result/raw/otutab.txt
 #Tax annotation
 #Remove plastid and non-Bact, taxonomy annotation, assign different databases, gg2, slv138.1
 vsearch --sintax result/raw/otus.fa \
---db ${db}/usearch/gg2.fa \
+--db ${db}/gg2.fa \
 --sintax_cutoff 0.1 \
 --tabbedout result/raw/otus.sintax 
 
@@ -102,11 +101,13 @@ cut -f 1,4 result/otus.sintax \
 |sed 's/\td/\tk/;s/:/__/g;s/,/;/g;s/"//g' \
 > result/taxonomy2.txt
 
+#reformat01
 awk 'BEGIN{OFS=FS="\t"}{delete a; a["k"]="Unassigned";a["p"]="Unassigned";a["c"]="Unassigned";a["o"]="Unassigned";a["f"]="Unassigned";a["g"]="Unassigned";a["s"]="Unassigned";\
       split($2,x,";");for(i in x){split(x[i],b,"__");a[b[1]]=b[2];} \
       print $1,a["k"],a["p"],a["c"],a["o"],a["f"],a["g"],a["s"];}' \
 result/taxonomy2.txt > temp/otus.tax
 
+#reformate02
 sed 's/;/\t/g;s/.__//g;' temp/otus.tax|cut -f 1-8 | \
 sed '1 s/^/OTUID\tKingdom\tPhylum\tClass\tOrder\tFamily\tGenus\tSpecies\n/' \
 > result/taxonomy.txt
