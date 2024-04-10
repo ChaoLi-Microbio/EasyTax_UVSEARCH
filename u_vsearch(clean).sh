@@ -1,7 +1,7 @@
 #running in linux system
 #Setting up working directory
 wd={your data folder}
-db={database folder}
+db={'db' folder}
 PATH=$PATH:${db}/linux
 cd ${wd}
 
