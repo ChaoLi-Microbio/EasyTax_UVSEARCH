@@ -1,32 +1,20 @@
 #library
-library(devtools)
-library(SpiecEasi)
 library(microeco)
 library(ggplot2)
-library(phyloseq)
 library(magrittr)
-library(igraph)
-library(magrittr)
-library(ggcor)
-library(dplyr)
-theme_set(theme_classic())
-set.seed(315)
-width = 89
-height = 59
 
-# setup work directory with the folder containing taxonomy.txt and otutab.txt etc.
-setwd("your data folder") # slv138.1, gg2
+#
+setwd("/home/data/result") # slv138.1, gg2
 
 metadata = read.table("metadata.txt", header=T, row.names=NULL, sep="\t", comment.char="")
 rownames(metadata) = metadata$SampleID
 otutab = read.table("otutab.txt", header=T, row.names=1, sep="\t", comment.char="")
 taxonomy = read.table("taxonomy.txt", header=T, row.names=1, sep="\t", comment.char="")
-tree = read_tree("otus.tree")
 
 taxonomy %<>% tidy_taxonomy
 metadata[,]
 
-dataset = microtable$new(sample_table = metadata, otu_table = otutab, tax_table = taxonomy, phylo_tree = tree)
+dataset = microtable$new(sample_table = metadata, otu_table = otutab, tax_table = taxonomy)
 dataset$tidy_dataset()
 
 dataset$tax_table %<>% base::subset(Kingdom == "k__Bacteria")
@@ -49,6 +37,7 @@ dataset$save_abund(dirpath = "tax")
 ## Community Composition
 # Define a vector of taxonomic ranks
 taxonomic_ranks <- c("Phylum", "Class", "Order", "Family", "Genus", "Species")
+
 #taxonomic_ranks <- c("Phylum", "Genus", "Species")
 # Loop through the taxonomic ranks
 for (rank in taxonomic_ranks) {
@@ -56,5 +45,5 @@ for (rank in taxonomic_ranks) {
   t1 = trans_abund$new(dataset = dataset, taxrank = rank, ntaxa = 21)
   p = t1$plot_bar(others_color = "grey70", xtext_keep = TRUE, legend_text_italic = FALSE)
   
-  # Save the plot for the current taxonomic rank
-  ggsave(paste0("tax_", rank, ".pdf"), p)}
+# Save the plot for the current taxonomic rank
+ggsave(paste0("tax_", rank, ".pdf"), p)}
