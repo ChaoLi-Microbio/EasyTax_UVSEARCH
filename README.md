@@ -9,7 +9,7 @@ Environment deployment:
 4. Running 'u_vsearch(clean).sh' in terminal step by step
 5. Running 'visualization.R' step by step for taxonomy visualization
 
-Here you go!
+There you go!
 
 
 
