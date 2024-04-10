@@ -6,6 +6,8 @@ PATH=$PATH:${db}/linux
 cd ${wd}
 
 mkdir -p result temp 
+
+#put your metadata file into 'result' folder
 cat -A result/metadata.txt | head -n3
 # 1 sequencing data summary
 ls -sh seq/
