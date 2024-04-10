@@ -8,16 +8,9 @@ Note: This is the 16s amplicon dataset process adapted and briefed from EazyAmpl
 #### 3. Running 'u_vsearch(clean).sh' in terminal step by step
    (This step will yield taxonomy.txt and otutab.txt files, you can customize your taxon community or continue step 4 below)
 #### 4. Running 'visualization.R' step by step for taxonomy visualization
-   (If necessary, library/packages installation:\
-   install.packages("BiocManager")\
-   BiocManager::install("devtools")\
-   BiocManager::install("SpiecEasi")\
+   (Library/packages installation:\
    install.packages("microeco")\
-   install.packages("ggplot2")\
-   install.packages("phyloseq")\
-   install.packages("magrittr")\
-   install.packages("igraph")\
-   install.packages("dplyr"))
+   install.packages("ggplot2"))
 
 ### Here you go!
 
