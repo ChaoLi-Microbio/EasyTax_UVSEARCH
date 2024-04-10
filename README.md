@@ -6,7 +6,17 @@ Environment deployment:
 1. Download 'db' folder of this project
 2. Download gg2.fa and/or slv138.1.fa, put it into 'db' folder
 3. Running 'u_vsearch(clean).sh' in terminal step by step
-4. Running 'visualization.R' step by step for taxonomy visualization
+   (This step will yield taxonomy.txt and otutab.txt files, you can customize your taxon community or continue step 4 below)
+5. Running 'visualization.R' step by step for taxonomy visualization
+   (If necessary, library/packages installation:
+   install.packages("BiocManager")
+   BiocManager::install("devtools")
+   install.packages("microeco")
+   install.packages("ggplot2")
+   install.packages("phyloseq")
+   install.packages("magrittr")
+   install.packages("igraph")
+   install.packages("dplyr"))
 
 There you go!
 
