@@ -11,6 +11,7 @@ Note: This is the 16s amplicon dataset process adapted and briefed from EazyAmpl
    (If necessary, library/packages installation:\
    install.packages("BiocManager")\
    BiocManager::install("devtools")\
+   BiocManager::install("SpiecEasi")\
    install.packages("microeco")\
    install.packages("ggplot2")\
    install.packages("phyloseq")\
