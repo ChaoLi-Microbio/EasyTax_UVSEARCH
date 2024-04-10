@@ -13,7 +13,7 @@ Note: This is the 16s amplicon dataset process adapted and briefed from EazyAmpl
    install.packages("microeco")\
    install.packages("ggplot2")
 
-### Here you go!
+### Have fun!
 
 
 
