@@ -9,11 +9,16 @@ Note: This is the 16s amplicon dataset process adapted and briefed from EazyAmpl
    (This step will yield taxonomy.txt and otutab.txt files, you can customize your taxon community or continue step 4 below)
 #### 4. Running 'visualization.R' step by step for taxonomy visualization
    ##### But first, Library/packages installation in R!
-   install.packages("magrittr")\
-   install.packages("microeco")\
-   install.packages("ggplot2")
+	install.packages("magrittr")
+	install.packages("microeco")
+	install.packages("ggplot2")
+## Here you go, have fun!
 
-### Have fun!
+
+### Citation:
+### If use this script, please cite the following:
+# Stay Tuned!
+
 
 
 
