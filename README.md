@@ -1,6 +1,6 @@
 # Simplfied taxonomy analysis by U/VSEARCH (Linux System)
 ## 6 public databases normalized (gg2 and/or slv138.1 are recommended)
-Note: This is the 16s amplicon dataset process adapted and briefed from EazyAmplicon(https://github.com/YongxinLiu/EasyAmplicon.git) using U/VSEARCH, targeting straightforward and precise identification of bacteria taxonomy.
+Note: This is the 16s amplicon dataset process adapted and simplified from [EazyAmplicon](https://github.com/YongxinLiu/EasyAmplicon.git) using U/VSEARCH, targeting straightforward and precise identification of bacteria taxonomy.
 
 ### All you need to do are(no other laborious environment deployment):
 #### 1. Download 'db' folder of this project
@@ -14,6 +14,7 @@ Note: This is the 16s amplicon dataset process adapted and briefed from EazyAmpl
 	install.packages("ggplot2")
 ## Here you go, have fun!
 
+## *Will post if any update for mac/win system
 
 ### Citation:
 ### If use this script, please cite the following:
