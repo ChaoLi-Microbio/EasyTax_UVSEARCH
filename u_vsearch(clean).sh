@@ -57,10 +57,17 @@ cp -f temp/otus.fa result/raw/otus.fa
 
 # 8 Feature table (ASV)
 time usearch -otutab temp/filtered.fa \
+-id 1 \
 -otus result/raw/otus.fa \
 -threads 14 \
 -otutabout result/raw/otutab.txt
-csvtk -t stat result/raw/otutab.txt
+
+###(Optional, just for big data process) 5.1 Feature table (ASV)
+time vsearch --usearch_global temp/filtered.fa \
+--db result/raw/otus.fa \
+--id 1 \
+--threads 0 \
+--otutabout result/raw/otutab.txt 
 
 #######################################
 #Tax annotation
