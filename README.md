@@ -9,7 +9,10 @@ Note: This is the 16s amplicon dataset process adapted and simplified from [Eazy
 #### 3. Run 'u_vsearch(clean).sh' in the terminal step by step
 (This step will yield taxonomy.txt and otutab.txt files, you can customize your taxon community visualization or continue step 4 below)
 
-Optional: Handy visualization mainly depending on [microeco](https://github.com/ChiLiubio/microeco) (Refine/beautify your customized visualization is welcomed!)
+<br>
+
+### Optional: Handy visualization
+(Refine/beautify your customized visualization is welcomed!)
 #### 4. Run 'visualization.R' step by step for taxonomy visualization (But first, Library/packages installation in R/R Studio!)
 	install.packages("magrittr")
 	install.packages("microeco")
