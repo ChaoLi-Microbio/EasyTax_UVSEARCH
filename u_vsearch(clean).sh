@@ -62,7 +62,7 @@ time usearch -otutab temp/filtered.fa \
 -threads 14 \
 -otutabout result/raw/otutab.txt
 
-###(Optional, just for big data process) 5.1 Feature table (ASV)
+###(Optional, just for big data process)
 time vsearch --usearch_global temp/filtered.fa \
 --db result/raw/otus.fa \
 --id 1 \
