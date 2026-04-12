@@ -2,7 +2,7 @@
 
 # Functions:data files wrap-up, to remove redundant chloroplast, mitocondria, and non-bacteria from OTU & taxonomy tables for downstream analysis.
 
-# Reference: Yong-Xin Liu, Yuan Qin, Tong Chen, Meiping Lu, Xubo Qian, Xiaoxuan Guo, Yang Bai. A practical guide to amplicon and metagenomic analysis of microbiome data. Protein Cell 2021(12) 5:315-330 doi: 10.1007/s13238-020-00724-8
+# Reference: Yong-Xin Liu, et al. A practical guide to amplicon and metagenomic analysis of microbiome data. Protein Cell 2021(12) 5:315-330 doi: 10.1007/s13238-020-00724-8
 
 options(warn = -1) # Turn off warning
 
