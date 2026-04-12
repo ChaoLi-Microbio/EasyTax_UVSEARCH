@@ -1,4 +1,4 @@
-# Simplfied taxonomy analysis by U/VSEARCH (Linux)
+# Simplfied taxonomy profiling by U/VSEARCH (Linux)
 ## 6 public databases normalized (two versions of Greengenes, Silva and RDP)
 Note: This simplified profiling pipline is based on USEARCH and VSEARCH(open-source version, data processing accelation), enabling quick, accessible and straightforward bacterial taxonomy based on 16S rRNA amplicon.
 *Details please refer to [USEARCH](https://www.drive5.com/usearch/manual/cmds_all.html), [VSEARCH](https://github.com/torognes/vsearch) and [EazyAmplicon](https://github.com/YongxinLiu/EasyAmplicon.git).*
