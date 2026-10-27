@@ -24,7 +24,8 @@ Note: This simplified profiling pipline is based on USEARCH and VSEARCH(open-sou
 ## *Will post if any update for mac/win system
 
 ### Citation: if use this script, please cite the following
-"Database-Pipeline Interactions Shape Taxonomic Inference in 16S rRNA Microbial Community Profiling", 2026,  ISMECOMMUN-D-26-00272 (Under Review)
+"Database-Pipeline Interactions Shape Taxonomic Inference in 16S rRNA Microbial Community Profiling", 2026,  ISME Communications, ycag299 
+Link: https://doi.org/10.1093/ismeco/ycag299
 
 
 
